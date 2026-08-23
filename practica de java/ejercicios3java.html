@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejercicio3-java</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<form>
+<input type="text" id="numero1">
+<br>
+<input type="text" id="numero2">
+<input type="button" onClick="calcularelmayor()" >presione aqui</button>
+</form>
+<script>
+function calcularelmayor() {
+let num1 = document.getElementById('numero1').value;
+let num2 = document.getElementById('numero2').value;
+if(num1>num2){
+   alert('este es el numero mayor'+num1);
+ }else{
+  alert('este es el numero mayor'+num2)
+}
+}
+</script>
+</body>
+</html>

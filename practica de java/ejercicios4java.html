@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejercicio4-java</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<form>
+<input type="text" id="nombre">
+<br>
+<input type="text" id="apellido">
+<button type="button" onClick="unirnombre()" >juntar nombre y apellido</button>
+<br><br>
+<input type="text" id="resultado">
+</form>
+<script>
+function unirnombre() {
+let nombre = document.getElementById('nombre').value;
+let apellido = document.getElementById('apellido').value;
+  document.getElementById('resultado').value = nombre + ' ' + apellido;
+}
+</script>
+</body>
+</html>
