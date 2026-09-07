@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio8-java</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<form>
+    <h1>Multiple choice</h1>
+
+    <label for="seleccion1">¿cuanto es 2+2?</label><br>
+    <select id="seleccion1">
+        <option value="1">4</option>
+        <option value="0">5</option>
+        <option value="0">10</option>
+        <option value="0">3</option>
+    </select>
+    <br>
+
+    <label for="seleccion2">¿cuanto es 5+5?</label><br>
+    <select id="seleccion2">
+        <option value="1">10</option>
+        <option value="0">25</option>
+        <option value="0">6</option>
+        <option value="0">20</option>
+    </select>
+    <br>
+
+    <label for="seleccion3">¿cuanto es 20+20?</label><br>
+    <select id="seleccion3">
+        <option value="0">50</option>
+        <option value="0">5</option>
+        <option value="1">40</option>
+        <option value="0">30</option>
+    </select>
+    <br>
+
+    <label for="seleccion4">¿cuanto es 100+400?</label><br>
+    <select id="seleccion4">
+        <option value="0">880</option>
+        <option value="1">500</option>
+        <option value="0">400</option>
+        <option value="0">3000</option>
+    </select>
+    <br>
+
+  
+    <input type="button" value="corregir" onclick="opcioncorrecta()">
+</form>
+
+<script>
+function opcioncorrecta() {
+    let p1 = parseInt(document.getElementById('seleccion1').value);
+    let p2 = parseInt(document.getElementById('seleccion2').value);
+    let p3 = parseInt(document.getElementById('seleccion3').value);
+    let p4 = parseInt(document.getElementById('seleccion4').value);
+
+    let correctas = p1 + p2 + p3 + p4;
+    let incorrectas = 4 - correctas;
+
+    alert('Respuestas correctas: ' + correctas + 'Respuestas incorrectas: ' + incorrectas);
+}
+</script>
+
+</body>
+</html>

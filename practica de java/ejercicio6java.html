@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejercicio6-java</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<form>
+<label for="select1">eliga su pizza</label>
+    <select id="seleccion1">
+      <option value="12.000">jamon y queso</option>
+      <option value="20.000">mozzarella</option>
+      <option value="30.000">morrones</option>
+    </select>
+    <br>
+    <label for="precio">precio $:</label>
+    <input type="text" id="precio">
+
+<input type="button"  value="validar" onClick="elegirpizza()">
+</form>
+<script>
+function elegirpizza()
+{
+let seleccion = document.getElementById('seleccion1');
+let precio=seleccion.value;
+document.getElementById('precio').value = precio;
+}
+</script>
+</body>
+</html>

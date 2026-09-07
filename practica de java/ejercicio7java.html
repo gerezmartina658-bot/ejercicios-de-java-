@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejercicio7-java</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<form>
+  <h1>equipos de computacion</h1>
+<label for="select1">eliga su procesador</label>
+    <select id="seleccion1">
+      <option value="400">Intel I3-$400</option>
+      <option value="600">Intel I5-$600</option>
+      <option value="800">Intel I7-$800</option>
+    </select>
+    <br>
+    <label for="select2">eliga su monitor</label>
+    <select id="seleccion2">
+      <option value="250">Samsung 20'-$250</option>
+      <option value="350">Samsung 22'-$350</option>
+      <option value="550">Samsung 26'-$550</option>
+    </select>
+    <br>
+     <label for="select3">Disco Duro</label>
+    <select id="seleccion3">
+      <option value="300">500 Gb-$300</option>
+      <option value="440">1 Tb-$440</option>
+      <option value="500">3 Tb-$500</option>
+    </select>
+    <br>
+    <label for="total">Presupuesto final</label>
+    <input type="text" id="total">
+    <br>
+<input type="button"  value="calcular" onClick="calcularpresupuesto()">
+</form>
+<script>
+function calcularpresupuesto()
+{
+let procesador= parseInt(document.getElementById('seleccion1').value);
+let monitor = parseInt(document.getElementById('seleccion2').value);
+let disco = parseInt(document.getElementById('seleccion3').value);
+
+let suma= procesador+monitor+disco;
+
+document.getElementById('total').value=suma;
+}
+</script>
+</body>
+</html>

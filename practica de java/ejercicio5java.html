@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejercicio5-java</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<form>
+  <label>ingrese su contraseña</label>
+<input type="password" id="text1">
+<br>
+<label>ingresela nuevamente</label>
+<input type="password" id="text2">
+<br>
+<input type="button"  value="validar" onClick="validarcontraseña()">
+</form>
+<script>
+function validarcontraseña() {
+let clave1 = document.getElementById('text1').value;
+let clave2= document.getElementById('text2').value;
+if(clave1==clave2){
+   alert('la contraseña es correcta');
+ }else{
+  alert('contraseña mal ingresada');
+}
+}
+</script>
+</body>
+</html>
