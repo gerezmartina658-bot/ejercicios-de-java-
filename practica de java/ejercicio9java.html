@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejercicio9-java</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<form>
+    <h1>login</h1>
+    <label>ingrese su nombre</label>
+    <input type="text" id="nombre">
+    <br>
+    <label>ingrese su contraseña</label>
+    <input type="password" id="contraseña" onblur="validarcontraseña()">
+    <br>
+<input type="button" onClick="validarcontraseña()" value="aceptar">
+</form>
+<script>
+function validarcontraseña() {
+    let contraseña=document.getElementById('contraseña').value;
+    if(contraseña.length<7||contraseña.length>20){
+alert('la clave debe tener entre 7 y 20 caracteres:'+contraseña );
+}
+}
+</script>
+</body>
+</html>
